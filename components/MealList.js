@@ -6,7 +6,8 @@ const MealList = props => {
 
   const selectedMealItemHandler = itemData => {
     props.navigation.navigate('MealDetail', {
-      mealId: itemData.item.id
+      mealId: itemData.item.id,
+      mealTitle: itemData.item.title
     });
   }
 
